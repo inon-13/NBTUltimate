@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:random_chance",
+    "chance": {
+      "type": "minecraft:score",
+      "target": "this",
+      "score": "nbtu.random_chance",
+      "scale": 0.01
+    }
+  }
+  
