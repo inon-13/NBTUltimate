@@ -9,4 +9,7 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$give @s $(id)[$(components)] $(count)
+summon marker ~ ~ ~ {Tags:["nbtu.temp.save_pos"]}
+data modify entity @n[tag=nbtu.temp.save_pos] data.UUID set from entity @s UUID
+$data modify entity @n[tag=nbtu.temp.save_pos] data.Command set value '$(Command)'
+$schedule function nbtultimate:utilities/command_activate/run $(Time) append

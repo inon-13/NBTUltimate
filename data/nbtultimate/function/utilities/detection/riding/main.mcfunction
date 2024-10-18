@@ -8,5 +8,5 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
-
-$give @s $(id)[$(components)] $(count)
+advancement revoke @s only nbtultimate:start_riding
+function nbtultimate:utilities/detection/riding/command_activation

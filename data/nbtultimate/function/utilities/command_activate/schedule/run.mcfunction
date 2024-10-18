@@ -8,5 +8,5 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
-
-$give @s $(id)[$(components)] $(count)
+function nbtultimate:utilities/command_activate/schedule/run_command with entity @n[tag=nbtu.temp.save_pos] data
+kill @n[tag=nbtu.temp.save_pos]

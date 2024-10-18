@@ -28,3 +28,5 @@ scoreboard objectives add nbtu.used.lingering_potion minecraft.used:minecraft.li
 scoreboard objectives add nbtu.used.bone_meal minecraft.used:minecraft.bone_meal
 scoreboard objectives add nbtu.used.fishing_rod minecraft.used:minecraft.fishing_rod
 scoreboard objectives add nbtu.random_chance dummy
+scoreboard objectives add nbtu.temp dummy
+scoreboard objectives add nbtu.right_click.cooldown dummy

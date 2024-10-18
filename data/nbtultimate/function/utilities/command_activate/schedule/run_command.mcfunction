@@ -9,4 +9,4 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$give @s $(id)[$(components)] $(count)
+$execute as @e[nbt={UUID:$(UUID)}] at @n[tag=nbtu.temp.save_pos] run function nbtultimate:utilities/command_activate/command with entity @s
