@@ -1,5 +1,0 @@
-{
-    "function": "minecraft:enchant_randomly",
-    "options": "#nbtultimate:all",
-    "only_compatible": true
-  }

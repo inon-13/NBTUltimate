@@ -1,8 +1,0 @@
-{
-    "function": "minecraft:set_count",
-    "count": {
-      "min": 0,
-      "max": 99
-    },
-    "add": false
-  }
