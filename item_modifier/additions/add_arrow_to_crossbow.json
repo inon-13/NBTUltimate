@@ -1,0 +1,13 @@
+[
+    {
+      "function": "minecraft:set_contents",
+      "component": "minecraft:charged_projectiles",
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow"
+        }
+      ]
+    }
+  ]
+  

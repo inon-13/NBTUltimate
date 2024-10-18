@@ -1,0 +1,23 @@
+[
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "id": "nbtultimate:unusable.mining_efficiency",
+          "attribute": "minecraft:mining_efficiency",
+          "amount": -1e+48,
+          "operation": "add_multiplied_total",
+          "slot": "any"
+        },
+        {
+          "id": "nbtultimate:unusable.block_break_speed",
+          "attribute": "minecraft:block_break_speed",
+          "amount": -1e+48,
+          "operation": "add_multiplied_total",
+          "slot": "any"
+        }
+      ],
+      "replace": true
+    }
+  ]
+  

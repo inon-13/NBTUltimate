@@ -1,0 +1,7 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{abilities:{instabuild:1b}}"
+    }
+}

@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:attribute_modifiers": {
+          "modifiers": [],
+          "show_in_tooltip": false
+        }
+      }
+    },
+    {
+      "function": "minecraft:set_attributes",
+      "modifiers": [
+        {
+          "id": "nbtultimate:unusable.block_interaction_range",
+          "attribute": "minecraft:block_interaction_range",
+          "amount": -1e+48,
+          "operation": "add_multiplied_total",
+          "slot": "any"
+        }
+      ],
+      "replace": true
+    }
+  ]
+  
