@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:started_riding"
+      }
+    },
+    "rewards": {
+      "function": "nbtultimate:utilities/detection/riding/main"
+    }
+  }
+  

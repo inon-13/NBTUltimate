@@ -1,0 +1,42 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 2147483647,
+        "animation": "none",
+        "sound": {
+          "sound_id": "null",
+          "range": 0
+        },
+        "has_consume_particles": false
+      },
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:any_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{PublicNBTUValues:{RunCommand:{RightClick:{}}}}}}}"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Inventory:{Slot:-106b,components:{\"minecraft:custom_data\":{PublicNBTUValues:{RunCommand:{RightClick:{}}}}}}}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

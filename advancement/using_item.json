@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "function": "nbtultimate:utilities/detection/right_click/main"
+  }
+}

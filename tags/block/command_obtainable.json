@@ -1,0 +1,12 @@
+{
+    "values": [
+        "command_block",
+        "repeating_command_block",
+        "chain_command_block",
+        "jigsaw",
+        "structure_block",
+        "structure_void",
+        "barrier",
+        "light"
+    ]
+}
