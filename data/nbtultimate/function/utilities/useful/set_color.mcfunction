@@ -8,5 +8,5 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
-$execute if items entity @s $(slot) #nbtultimate:armor/leather run item modify entity @s $(slot) [{"function":"minecraft:set_components","components":{"minecraft:dyed_color":{"rgb":$(color)}}}]
-$execute if items entity @s $(slot) #nbtultimate:potions run item modify entity @s $(slot) [{"function":"minecraft:set_components","components":{"minecraft:potion_contents":{"custom_color":$(color)}}}]
+$execute if items entity @s $(Slot) #nbtultimate:armor/leather run item modify entity @s $(Slot) [{"function":"minecraft:set_components","components":{"minecraft:dyed_color":{"rgb":$(Color)}}}]
+$execute if items entity @s $(Slot) #nbtultimate:potions run item modify entity @s $(Slot) [{"function":"minecraft:set_components","components":{"minecraft:potion_contents":{"custom_color":$(Color)}}}]

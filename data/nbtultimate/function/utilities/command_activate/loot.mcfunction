@@ -8,5 +8,4 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
-
-$summon $(id) $(Position) $(Data)
+$loot $(Type) $(Target) $(Channel) $(Id)

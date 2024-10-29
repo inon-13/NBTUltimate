@@ -9,4 +9,4 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$playsound $(Playsound)
+$playsound $(id) $(Channel) $(Target) $(Position) $(Volume) $(Pitch)

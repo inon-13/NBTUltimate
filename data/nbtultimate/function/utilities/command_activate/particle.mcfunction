@@ -10,4 +10,4 @@
 
 
 
-$particle $(Particle)
+$particle $(id) $(Position) $(Delta) $(Speed) $(Count) $(Type) $(Target)

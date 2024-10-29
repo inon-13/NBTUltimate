@@ -16,3 +16,9 @@ execute as @s at @s run execute on origin run data modify entity @n Owner set fr
 
 # Changes the pickup delay to 0
 data modify entity @s PickupDelay set value 0s
+
+execute on origin run tag @s add nbtu.temp.origin
+
+tp @s @n[tag=nbtu.temp.origin]
+
+tag @a remove nbtu.temp.origin

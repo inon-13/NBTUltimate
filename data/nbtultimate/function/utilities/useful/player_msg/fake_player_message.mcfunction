@@ -9,4 +9,4 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$summon $(id) $(Position) $(Data)
+$tellraw @a [{"text":"<"},{"text":"$(Player)"},{"text":"> "},{"text":"$(Message)"}]

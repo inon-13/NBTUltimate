@@ -8,7 +8,6 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
-
 # End Portal
 give @s minecraft:command_block[block_entity_data={Command:"setblock ~ ~ ~ end_portal",auto:true,id:"minecraft:command_block"},minecraft:item_name='{"text":"","extra":[{"text":"E","color":"#303030"},{"text":"n","color":"#3A3A3A"},{"text":"d","color":"#454545"},{"text":" ","color":"#505050"},{"text":"P","color":"#5B5B5B"},{"text":"o","color":"#666666"},{"text":"r","color":"#717171"},{"text":"t","color":"#7C7C7C"},{"text":"a","color":"#878787"},{"text":"l","color":"#929292"}],"italic":false}']
 # End Gateway

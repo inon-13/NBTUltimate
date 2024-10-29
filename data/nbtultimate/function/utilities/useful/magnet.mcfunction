@@ -9,6 +9,6 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$execute as @s at @s run execute as @e[distance=..$(Distance),type=minecraft:experience_orb] run tp @s ~ ~ ~
-$execute as @s at @s run execute as @e[distance=..$(Distance),type=item] at @s run data modify entity @s PickupDelay set value 0
-$execute as @s at @s run execute as @e[distance=..$(Distance),type=minecraft:item] run tp @s ~ ~ ~
+$execute as @s at @s run execute as @e[distance=..$(Range),type=minecraft:experience_orb] run tp @s ~ ~ ~
+$execute as @s at @s run execute as @e[distance=..$(Range),type=item] at @s run data modify entity @s PickupDelay set value 0
+$execute as @s at @s run execute as @e[distance=..$(Range),type=minecraft:item] run tp @s ~ ~ ~

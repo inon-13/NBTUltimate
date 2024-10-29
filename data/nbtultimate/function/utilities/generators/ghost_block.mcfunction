@@ -9,4 +9,4 @@
 #||||||||||||||||||||||||||||||||||||#
 
 
-$give @s $(SpawnEggName)_spawn_egg[entity_data={id:"falling_block",BlockState:{Name:"$(Block)",Properties:$(BlockState)},Time:-2147483648,NoGravity:1b,Glowing:$(Glowing)},lore=['{"text":"This is a ghost block of the block: $(Block)"}']]
+$give @s $(SpawnEggType)_spawn_egg[entity_data={id:"falling_block",BlockState:{Name:"$(Block)",Properties:$(BlockState)},Time:-2147483648,NoGravity:1b,Glowing:$(Glowing)},lore=['{"text":"This is a ghost block of the block: $(Block)"}']]

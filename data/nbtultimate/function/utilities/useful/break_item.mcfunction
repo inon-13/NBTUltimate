@@ -8,5 +8,6 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
+playsound minecraft:entity.item.break player @s ~ ~ ~ 0.8 1.1
 
-$summon $(id) $(Position) $(Data)
+$item replace entity @s $(Slot) with minecraft:air

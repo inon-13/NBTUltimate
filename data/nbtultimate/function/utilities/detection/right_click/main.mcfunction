@@ -8,15 +8,26 @@
 #|                                  |#
 #||||||||||||||||||||||||||||||||||||#
 
+# Advancement Reset
+
+execute if entity @s[advancements={nbtultimate:placed_block=true}] run tag @s add nbtu.temp.right_click.placed_block
+execute if entity @s[advancements={nbtultimate:placed_block=false,nbtultimate:using_item=true}] run tag @s add nbtu.temp.right_click.using_item
+execute if entity @s[advancements={nbtultimate:placed_block=false,nbtultimate:using_item=false}] run tag @s add nbtu.temp.right_click.using_item
 advancement revoke @s only nbtultimate:using_item
 advancement revoke @s only nbtultimate:placed_block
 
-function nbtultimate:utilities/detection/right_click/command_activation with entity @s
+# Hand check
 
-# Mainhand functions
-execute if data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnCreative:1b} if data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnUse:1b} run item modify entity @s weapon.mainhand nbtultimate:right_click_detection/remove_count
-execute unless data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnCreative:1b} if data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnUse:1b} unless entity @s[gamemode=creative] run item modify entity @s weapon.mainhand nbtultimate:right_click_detection/remove_count
+# Any
+execute if data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{hand:"any"} run function nbtultimate:utilities/detection/right_click/mainhand
+execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{hand:"any"} run function nbtultimate:utilities/detection/right_click/offhand
+# None
+execute unless data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick.hand run function nbtultimate:utilities/detection/right_click/mainhand
+execute unless data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick.hand run function nbtultimate:utilities/detection/right_click/offhand
 
-# Offhand functions
-execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnCreative:1b} if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnUse:1b} run item modify entity @s weapon.offhand nbtultimate:right_click_detection/remove_count
-execute unless data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnCreative:1b} if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{ConsumeOnUse:1b} unless entity @s[gamemode=creative] run item modify entity @s weapon.offhand nbtultimate:right_click_detection/remove_count
+# Normal
+execute if data entity @s SelectedItem.components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{hand:"mainhand"} run function nbtultimate:utilities/detection/right_click/mainhand
+execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".PublicNBTUValues.RunCommand.RightClick{hand:"offhand"} run function nbtultimate:utilities/detection/right_click/offhand
+
+tag @s remove nbtu.temp.right_click.placed_block
+tag @s remove nbtu.temp.right_click.using_item
