@@ -1,7 +1,8 @@
 {
+    "replace": false,
     "values": [
-        "potion",
-        "splash_potion",
-        "lingering_potion"
+        {"required": false, "id": "potion"},
+        {"required": false, "id": "splash_potion"},
+        {"required": false, "id": "lingering_potion"}
     ]
 }

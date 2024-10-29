@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        {"required": false, "id": "air"},
+        {"required": false, "id": "cave_air"},
+        {"required": false, "id": "void_air"},
+        {"required": false, "id": "structure_void"},
+        {"required": false, "id": "barrier"},
+        {"required": false, "id": "light"},
+        {"required": false, "id": "moving_piston"},
+        {"required": false, "id": "bubble_column"}
+    ]
+}

@@ -5,16 +5,6 @@
       "values": [],
       "mode": "replace_all"
     },
-    "flight_duration": 0,
-    "conditions": [
-      {
-        "condition": "minecraft:match_tool",
-        "predicate": {
-          "components": {
-            "minecraft:custom_data": "{PublicNBTUValues:{Unusable:1b}}"
-          }
-        }
-      }
-    ]
+    "flight_duration": 0
   }
 ]

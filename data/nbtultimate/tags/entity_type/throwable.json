@@ -1,9 +1,12 @@
 {
+    "replace": false,
     "values": [
-        "minecraft:egg",
-        "minecraft:experience_bottle",
-        "minecraft:snowball",
-        "minecraft:potion",
-        "minecraft:ender_pearl"
+        { "required": false, "id": "minecraft:snowball" },
+        { "required": false, "id": "minecraft:egg" },
+        { "required": false, "id": "minecraft:ender_pearl" },
+        { "required": false, "id": "minecraft:potion" },
+        { "required": false, "id": "minecraft:ender_eye" },
+        { "required": false, "id": "minecraft:wind_charge" },
+        { "required": false, "id": "minecraft:trident" }
     ]
 }

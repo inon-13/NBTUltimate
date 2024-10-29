@@ -1,13 +1,14 @@
 {
+    "replace": false,
     "values": [
-        "ladder",
-        "vine",
-        "cave_vines",
-        "weeping_vines",
-        "twisting_vines",
-        "scaffolding",
-        "cave_vines_plant",
-        "twisting_vines_plant",
-        "weeping_vines_plant"
+        {"required": false, "id": "ladder"},
+        {"required": false, "id": "vine"},
+        {"required": false, "id": "cave_vines"},
+        {"required": false, "id": "weeping_vines"},
+        {"required": false, "id": "twisting_vines"},
+        {"required": false, "id": "scaffolding"},
+        {"required": false, "id": "cave_vines_plant"},
+        {"required": false, "id": "twisting_vines_plant"},
+        {"required": false, "id": "weeping_vines_plant"}
     ]
 }

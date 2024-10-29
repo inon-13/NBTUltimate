@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "nbtultimate:utilities/detection/used_block/main"
+  }
+}

@@ -1,0 +1,53 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "required": false,
+            "id": "minecraft:command_block"
+        },
+        {
+            "required": false,
+            "id": "minecraft:command_block_minecart"
+        },
+        {
+            "required": false,
+            "id": "minecraft:repeating_command_block"
+        },
+        {
+            "required": false,
+            "id": "minecraft:chain_command_block"
+        },
+        {
+            "required": false,
+            "id": "minecraft:jigsaw"
+        },
+        {
+            "required": false,
+            "id": "minecraft:debug_stick"
+        },
+        {
+            "required": false,
+            "id": "minecraft:knowledge_book"
+        },
+        {
+            "required": false,
+            "id": "minecraft:structure_block"
+        },
+        {
+            "required": false,
+            "id": "minecraft:structure_void"
+        },
+        {
+            "required": false,
+            "id": "minecraft:barrier"
+        },
+        {
+            "required": false,
+            "id": "minecraft:wither_spawn_egg"
+        },
+        {
+            "required": false,
+            "id": "minecraft:ender_dragon_spawn_egg"
+        }
+    ]
+}
