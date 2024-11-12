@@ -11,5 +11,7 @@ Check out our [Quick Start Guide](https://github.com/inon-13/NBTUltimate/wiki) i
 ## Contributing
 Contributions are welcome! Please feel free to submit pull requests or create issues for bugs and feature requests.
 
+## Installation
+Download the latest version from [Modrinth](https://modrinth.com/project/nbtultimate)
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
